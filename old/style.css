@@ -1,0 +1,106 @@
+/*Warning*/
+
+html {
+  height: 100%;
+}
+body{
+  height: 100%;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  background-color: black;
+}
+.container{
+	position: relative;
+	height: 100%;
+}
+.window{
+	height: 50%;
+	width: 40%;
+	margin: 0 auto;
+	position: absolute;
+	top: 20%;
+	left: 25%;
+	
+}
+.window-head{
+	background-color: #444348;
+	border-radius: 10px 10px 0px 0px;
+	display:inline-grid;
+	grid-template-columns: auto auto auto;
+	padding: 10px;
+	height: auto;
+	width: 100%;
+}
+
+.window-head-buttons{
+	padding-left:20px;
+}
+
+.window-body{
+	background-color: #f8f7fc;
+	height: 100%;
+	border-radius: 0px 0px 10px 10px;
+	color:black;
+	text-align:center;
+	padding-top: 5%;
+
+}
+
+.warning-simbol-container > div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.window .dot {
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 5px 14px 0px 0px;
+}
+
+.window .dot.red{
+	background-color:red;
+}
+.window .dot.yellow{
+	background-color:yellow;
+}
+.window .dot.green{
+	background-color:green;
+}
+
+.window .window-title{
+	color:white;
+	position: relative;
+	left: 15%;
+	font-size: 18px;
+}
+
+
+/*Radio*/
+input[type=radio] { 
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+input[type=radio] + img {
+  cursor: pointer;
+  height: 50px;
+}
+
+input[type=radio]:checked + img {
+  outline: 4px solid rgb(27, 27, 27);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.lbl-language{
+	padding-right: 50px;
+}
+
+.warning-icon{
+	height: 120px;
+
+}

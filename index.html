@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portifólio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link href="src/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <script
+      src="https://kit.fontawesome.com/94d7c4963f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://code.jquery.com/ui/1.14.0-beta.1/jquery-ui.min.js"
+      integrity="sha256-eTkBotE66yiuQ4Th2m+9M00ivksRSCZHIphWprTOFls="
+      crossorigin="anonymous"
+    ></script>
+    <div class="container-fluid">
+      <div class="window">
+        <div class="window-head d-flex">
+          <div class="window-head-buttons">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <div class="window-center d-flex">
+            <div class="window-head-title d-flex">
+              <p>Portifólio</p>
+            </div>
+          </div>
+        </div>
+        <div class="window-body d-flex">
+          <div class="sidebar">
+            <div class="sidebar-side d-flex">
+              <div class="sidebar-left d-flex">
+                <ul data-placement="left">
+                  <li class="d-flex flex-column">
+                    <a data-toggle="tooltip" title="Informações">
+                      <img src="src/img/document.svg" alt="Documents" />
+                    </a>
+                  </li>
+
+                  <li class="d-flex flex-column">
+                    <a data-toggle="tooltip" title="Projetos"
+                      ><img src="src/img/codeblock.svg" alt="Codeblock"
+                    /></a>
+                  </li>
+                  <li class="d-flex flex-column">
+                    <a data-toggle="tooltip" title="Idiomas"
+                      ><img src="src/img/language.svg" alt="Language"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="sidebar-right"></div>
+            </div>
+            <div class="sidebar-bottom"></div>
+          </div>
+          <div class="main-content">
+            <div class="content-head">
+              <ul class="d-flex">
+                <li class="d-flex justify-content-around p-2">
+                  <a class="d-flex">
+                    <img
+                      class="codeoutline"
+                      src="src/img/codeoutline.svg"
+                      alt=""
+                    />Sobre
+                  </a>
+
+                  <img class="close" src="src/img/x.svg" alt="" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    $(".sidebar li").click(function () {
+      $(this).toggleClass("active").siblings().removeClass("active");
+    });
+
+    $(".content-head li").click(function () {
+      console.log("teste");
+      $(this).toggleClass("active").siblings().removeClass("active");
+    });
+
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
+</html>

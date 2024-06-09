@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 64 42" style="enable-background:new 0 0 64 42;" xmlns="http://www.w3.org/2000/svg">
+  <defs/>
+  <style type="text/css">
+	.st0{fill:#008F3E;}
+	.st1{fill:#F8C300;}
+	.st2{fill:#28166F;}
+	.st3{fill:#FFFFFF;}
+</style>
+  <path id="Rounded_Rectangle_7_copy_1_" class="st0" d="M 6.562 1.007 L 57.342 1.007 C 60.546 1.007 63.07 3.487 63.07 6.445 L 63.07 35.633 C 63.07 38.685 60.546 41.07 57.438 41.07 L 6.562 41.07 C 3.454 41.07 0.93 38.59 0.93 35.633 L 0.93 6.445 C 0.93 3.487 3.454 1.007 6.562 1.007 Z" style="fill: none; stroke-width: 2px; stroke: rgb(134, 134, 134);"/>
+  <path class="st1" d="M 2.683 21.077 L 31.922 2.789 L 61.162 21.077 L 31.922 39.365 L 2.683 21.077 Z" style="fill: none; stroke: rgb(134, 134, 134); stroke-width: 2px;"/>
+  <ellipse class="st2" cx="32" cy="21" rx="13.9" ry="14" style="stroke-width: 2px; stroke: rgb(134, 134, 134); fill: none;"/>
+  <path class="st3" d="M 43.426 28.099 C 43.815 27.282 44.108 26.363 44.302 25.444 C 40.212 15.638 29.401 11.144 20.149 15.434 C 19.759 15.638 19.37 15.843 18.98 16.047 C 18.688 16.762 18.396 17.477 18.201 18.192 C 27.259 13.391 38.264 17.17 42.842 26.772 C 43.036 27.18 43.231 27.589 43.426 28.099 Z" style="fill: rgb(134, 134, 134); transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(0.970384, -0.241569, 0.241569, 0.970384, 0, 0.000001)"/>
+</svg>
