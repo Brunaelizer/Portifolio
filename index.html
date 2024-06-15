@@ -11,6 +11,8 @@
       crossorigin="anonymous"
     />
     <link href="src/css/style.css" rel="stylesheet" />
+    <link href="src/css/sidebar.css" rel="stylesheet" />
+    <link href="src/css/maincontent.css" rel="stylesheet" />
   </head>
   <body>
     <script
@@ -39,7 +41,7 @@
           </div>
           <div class="window-center d-flex">
             <div class="window-head-title d-flex">
-              <p>Portifólio</p>
+              <p>Portifolio</p>
             </div>
           </div>
         </div>
@@ -48,27 +50,74 @@
             <div class="sidebar-side d-flex">
               <div class="sidebar-left d-flex">
                 <ul data-placement="left">
-                  <li class="d-flex flex-column">
-                    <a data-toggle="tooltip" title="Informações">
+                  <li class="d-flex flex-column" id="information">
+                    <a data-toggle="tooltip" title="Information">
                       <img src="src/img/document.svg" alt="Documents" />
                     </a>
                   </li>
 
-                  <li class="d-flex flex-column">
-                    <a data-toggle="tooltip" title="Projetos"
+                  <li class="d-flex flex-column" id="projects">
+                    <a data-toggle="tooltip" title="Projects"
                       ><img src="src/img/codeblock.svg" alt="Codeblock"
                     /></a>
                   </li>
-                  <li class="d-flex flex-column">
-                    <a data-toggle="tooltip" title="Idiomas"
-                      ><img src="src/img/language.svg" alt="Language"
+                  <li class="d-flex flex-column" id="language">
+                    <a data-toggle="tooltip" title="Language">
+                      <img src="src/img/language.svg" alt="Language"
                     /></a>
                   </li>
                 </ul>
               </div>
-              <div class="sidebar-right"></div>
+              <div class="sidebar-right">
+                <h1>EXPLORER</h1>
+                <div class="files">
+                  <h2>
+                    <img src="src/img/downarrow.svg" class="downarrow" />
+                    PORTIFOLIO
+                  </h2>
+                  <ul>
+                    <li>
+                      <a>
+                        <img
+                          class="codeoutline"
+                          src="src/img/codeoutline.svg"
+                          alt=""
+                        />About_Me.html
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <img
+                          class="codeoutline"
+                          src="src/img/codeoutline.svg"
+                          alt=""
+                        />Curriculum.html
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <img
+                          class="codeoutline"
+                          src="src/img/codeoutline.svg"
+                          alt=""
+                        />This_project.html
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div class="sidebar-bottom"></div>
+            <div class="sidebar-bottom">
+              <div class="user d-flex">
+                <div class="user-img">
+                  <img src="src/img/profile_user.svg" alt="" />
+                </div>
+                <div class="user-name">
+                  <h1>Bruna Elize Zermiani</h1>
+                  <h2>Fullstack developer</h2>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="main-content">
             <div class="content-head">
@@ -79,7 +128,29 @@
                       class="codeoutline"
                       src="src/img/codeoutline.svg"
                       alt=""
-                    />Sobre
+                    />About_me.html
+                  </a>
+
+                  <img class="close" src="src/img/x.svg" alt="" />
+                </li>
+                <li class="d-flex justify-content-around p-2">
+                  <a class="d-flex">
+                    <img
+                      class="codeoutline"
+                      src="src/img/codeoutline.svg"
+                      alt=""
+                    />Curriculum.html
+                  </a>
+
+                  <img class="close" src="src/img/x.svg" alt="" />
+                </li>
+                <li class="d-flex justify-content-around p-2">
+                  <a class="d-flex">
+                    <img
+                      class="codeoutline"
+                      src="src/img/codeoutline.svg"
+                      alt=""
+                    />This_project.html
                   </a>
 
                   <img class="close" src="src/img/x.svg" alt="" />
@@ -92,17 +163,21 @@
     </div>
   </body>
   <script>
-    $(".sidebar li").click(function () {
-      $(this).toggleClass("active").siblings().removeClass("active");
-    });
+    $(document).ready(function () {
+      $(".sidebar-left li").click(function () {
+        $(this).toggleClass("active").siblings().removeClass("active");
+      });
 
-    $(".content-head li").click(function () {
-      console.log("teste");
-      $(this).toggleClass("active").siblings().removeClass("active");
-    });
+      $("#information").addClass("active");
 
-    $(function () {
-      $('[data-toggle="tooltip"]').tooltip();
+      $(".content-head li").click(function () {
+        console.log("teste");
+        $(this).toggleClass("active").siblings().removeClass("active");
+      });
+
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
     });
   </script>
 </html>
