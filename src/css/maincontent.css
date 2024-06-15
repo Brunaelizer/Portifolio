@@ -16,12 +16,16 @@
 }
 
 .window .main-content .content-head ul li{
-	width: 14%;
+	width: 17%;
 	height: 100%;
 	border: 1px solid #353535;
 	border-bottom: none;
 	margin: 0px;
 	align-items: center;
+}
+
+.window .main-content .content-body{
+	height: 100%;
 }
 
 img.close:hover{
@@ -42,4 +46,35 @@ img.close:hover{
 .main-content .active{
 	border-top: 5px solid #0078d4;
 	background-color: #1f1f1f;
+}
+
+.content-path{
+	color: #c2c2c2;
+	font-size: 12px;
+	margin-left: 10px;
+}
+
+.info-content{
+	color: #c2c2c2;
+	font-family: 'Cascadia Code', sans-serif;
+}
+
+.info-content h1{
+	font-size: 20px;
+	color:#8cdcfe;
+	
+}
+
+.info-content h2{
+	font-size: 18px;
+	color:#ce723c;
+}
+
+.info-content h3{
+	font-size: 15px;
+	color: #a7ce9b;
+}
+
+.info-content p{
+	font-size: 14px;
 }
