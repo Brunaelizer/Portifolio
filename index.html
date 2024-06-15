@@ -175,15 +175,7 @@
             </div>
             <div class="content-body">
               <div class="content-path">pages > about-me.html > html</div>
-              <iframe
-                src="pages/en/about-me.html"
-                width="100%"
-                height="100%"
-                name="targetframe"
-                allowTransparency="true"
-                scrolling="no"
-                frameborder="0">
-              </iframe>
+              <div class="content" id="content"></div>
             </div>
           </div>
         </div>
@@ -211,7 +203,6 @@
         if ($(this).parent().hasClass("opt-language")) {
           $("#selected-lang").val($(this).find("input").val());
         }
-
       });
 
       $(".tab-documents").addClass("active");
@@ -220,6 +211,8 @@
       $(function () {
         $('[data-toggle="tooltip"]').tooltip();
       });
+
+      $("#content").load("pages/en/about-me.html");
     });
   </script>
 </html>

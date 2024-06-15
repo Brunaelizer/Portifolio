@@ -111,9 +111,26 @@ img.downarrow{
 	display: none;
 }
 
-iframe{
-	display: block;
-	width: 100%;
-	height: 100%;
-	border: none;
- }
+.external-content{
+	color: #c2c2c2;
+}
+
+ .external-content h1{
+	font-size: 20px;
+	color:#8cdcfe;
+	
+}
+
+.external-content h2{
+	font-size: 18px;
+	color:#ce723c;
+}
+
+.external-content h3{
+	font-size: 15px;
+	color: #a7ce9b;
+}
+
+.external-content p{
+	font-size: 14px;
+}
