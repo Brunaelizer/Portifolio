@@ -8,8 +8,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
+      crossorigin="anonymous" />
     <link href="src/css/style.css" rel="stylesheet" />
     <link href="src/css/sidebar.css" rel="stylesheet" />
     <link href="src/css/maincontent.css" rel="stylesheet" />
@@ -17,20 +16,20 @@
   <body>
     <script
       src="https://kit.fontawesome.com/94d7c4963f.js"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
 
     <script
       src="https://code.jquery.com/ui/1.14.0-beta.1/jquery-ui.min.js"
       integrity="sha256-eTkBotE66yiuQ4Th2m+9M00ivksRSCZHIphWprTOFls="
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
+
+    <input type="hidden" id="selected-lang" />
+
     <div class="container-fluid">
       <div class="window">
         <div class="window-head d-flex">
@@ -50,18 +49,18 @@
             <div class="sidebar-side d-flex">
               <div class="sidebar-left d-flex">
                 <ul data-placement="left">
-                  <li class="d-flex flex-column" id="information">
+                  <li class="d-flex flex-column tab-documents">
                     <a data-toggle="tooltip" title="Information">
                       <img src="src/img/document.svg" alt="Documents" />
                     </a>
                   </li>
 
-                  <li class="d-flex flex-column" id="projects">
+                  <li class="d-flex flex-column tab-projects">
                     <a data-toggle="tooltip" title="Projects"
                       ><img src="src/img/codeblock.svg" alt="Codeblock"
                     /></a>
                   </li>
-                  <li class="d-flex flex-column" id="language">
+                  <li class="d-flex flex-column tab-languages">
                     <a data-toggle="tooltip" title="Language">
                       <img src="src/img/language.svg" alt="Language"
                     /></a>
@@ -69,39 +68,55 @@
                 </ul>
               </div>
               <div class="sidebar-right">
-                <h1>EXPLORER</h1>
-                <div class="files">
-                  <h2>
-                    <img src="src/img/downarrow.svg" class="downarrow" />
-                    PORTIFOLIO
-                  </h2>
-                  <ul>
-                    <li>
-                      <a>
-                        <img
-                          class="codeoutline"
-                          src="src/img/codeoutline.svg"
-                          alt=""
-                        />About_Me.html
-                      </a>
+                <div id="documents">
+                  <h1>EXPLORER</h1>
+                  <div class="files">
+                    <h2>
+                      <img src="src/img/downarrow.svg" class="downarrow" />
+                      PORTIFOLIO
+                    </h2>
+                    <ul>
+                      <li>
+                        <a>
+                          <img
+                            class="codeoutline"
+                            src="src/img/codeoutline.svg"
+                            alt="" />About_Me.html
+                        </a>
+                      </li>
+                      <li>
+                        <a>
+                          <img
+                            class="codeoutline"
+                            src="src/img/codeoutline.svg"
+                            alt="" />Curriculum.html
+                        </a>
+                      </li>
+                      <li>
+                        <a>
+                          <img
+                            class="codeoutline"
+                            src="src/img/codeoutline.svg"
+                            alt="" />This_project.html
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div id="projects" class="inactive">
+                  <h1>PROJECTS</h1>
+                  <div class="large-row"></div>
+                </div>
+                <div id="languages" class="inactive">
+                  <h1>LANGUAGE</h1>
+                  <ul class="opt-language">
+                    <li class="large-row d-flex" id="pt">
+                      <input type="hidden" value="pt" />
+                      <img src="src/img/brazil_flag.svg" alt="" />Português
                     </li>
-                    <li>
-                      <a>
-                        <img
-                          class="codeoutline"
-                          src="src/img/codeoutline.svg"
-                          alt=""
-                        />Curriculum.html
-                      </a>
-                    </li>
-                    <li>
-                      <a>
-                        <img
-                          class="codeoutline"
-                          src="src/img/codeoutline.svg"
-                          alt=""
-                        />This_project.html
-                      </a>
+                    <li class="large-row d-flex" id="en">
+                      <input type="hidden" value="en" />
+                      <img src="src/img/usa_flag.svg" alt="" />English
                     </li>
                   </ul>
                 </div>
@@ -127,8 +142,7 @@
                     <img
                       class="codeoutline"
                       src="src/img/codeoutline.svg"
-                      alt=""
-                    />About_me.html
+                      alt="" />About_me.html
                   </a>
 
                   <img class="close" src="src/img/x.svg" alt="" />
@@ -138,8 +152,7 @@
                     <img
                       class="codeoutline"
                       src="src/img/codeoutline.svg"
-                      alt=""
-                    />Curriculum.html
+                      alt="" />Curriculum.html
                   </a>
 
                   <img class="close" src="src/img/x.svg" alt="" />
@@ -149,8 +162,7 @@
                     <img
                       class="codeoutline"
                       src="src/img/codeoutline.svg"
-                      alt=""
-                    />This_project.html
+                      alt="" />This_project.html
                   </a>
 
                   <img class="close" src="src/img/x.svg" alt="" />
@@ -164,11 +176,29 @@
   </body>
   <script>
     $(document).ready(function () {
-      $(".sidebar-left li").click(function () {
-        $(this).toggleClass("active").siblings().removeClass("active");
+      $("li").click(function () {
+        $(this).addClass("active").siblings().removeClass("active");
+
+        if ($(this).hasClass("tab-documents")) {
+          $("#documents").removeClass("inactive");
+          $("#projects").addClass("inactive");
+          $("#languages").addClass("inactive");
+        } else if ($(this).hasClass("tab-projects")) {
+          $("#documents").addClass("inactive");
+          $("#projects").removeClass("inactive");
+          $("#languages").addClass("inactive");
+        } else if ($(this).hasClass("tab-languages")) {
+          $("#documents").addClass("inactive");
+          $("#projects").addClass("inactive");
+          $("#languages").removeClass("inactive");
+        }
+        if ($(this).parent().hasClass("opt-language")) {
+          $("#selected-lang").val($(this).find("input").val());
+        }
       });
 
-      $("#information").addClass("active");
+      $(".tab-documents").addClass("active");
+      $("#en").click();
 
       $(".content-head li").click(function () {
         console.log("teste");
