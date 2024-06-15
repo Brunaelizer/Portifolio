@@ -85,14 +85,13 @@
 }
 
 .sidebar .sidebar-right h2{
-
+	margin: 5px;
     font-size: 12px;
     font-weight: bold;
 }
 
 .sidebar-right .files{
     width: 100%;
-    margin-left: 5px;
 }
 
 .sidebar-right .files ul li{
@@ -116,4 +115,9 @@
 	height: 50px;
 	padding-left: 20px;
 	margin-right: 10px;
+}
+
+.sidebar a{
+	text-decoration: none;
+	color: inherit;
 }
