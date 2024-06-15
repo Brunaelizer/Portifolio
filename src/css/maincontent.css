@@ -1,0 +1,45 @@
+.window .main-content{
+	width: 70%;
+}
+
+.window .main-content .content-head{
+	height: 5%;
+	background-color: #181818;
+}
+
+.window .main-content .content-head ul{
+	height: 100%;
+	width: 100%;
+	border-bottom: 1px solid #353535;
+	color: #4b4b4b;
+    font-size: 15px;
+}
+
+.window .main-content .content-head ul li{
+	width: 14%;
+	height: 100%;
+	border: 1px solid #353535;
+	border-bottom: none;
+	margin: 0px;
+	align-items: center;
+}
+
+img.close:hover{
+	background-color: white;
+	filter: invert(86%) sepia(0%) saturate(1322%) hue-rotate(176deg) brightness(100%) contrast(83%);
+}
+
+.window .main-content .content-head ul li a{
+	align-items: center;
+	color: inherit;
+	text-decoration: none;
+}
+
+.window .main-content .content-head ul li:hover{
+	background-color: #1f1f1f;
+}
+
+.main-content .active{
+	border-top: 5px solid #0078d4;
+	background-color: #1f1f1f;
+}

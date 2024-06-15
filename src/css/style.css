@@ -61,26 +61,6 @@ body{
 	height: 95%;
 }
 
-.window-body .sidebar{
-	background-color: #181818;
-	width: 30%;
-	height: 100%;
-}
-
-.window-body .sidebar .sidebar-left{
-	width: 10%;
-	height: 100%;
-	border-right: 1px solid #353535;
-	justify-content: center;
-	min-width: 50px;
-	padding-top: 20px;
-}
-
-.window-body .sidebar .sidebar-right{
-	width: 90%;
-	height: 100%;
-	border-right: 1px solid #353535;
-}
 
 .window .dot {
   height: 17px;
@@ -108,92 +88,20 @@ body{
 	width: 100%;
 }
 
-
-.sidebar .sidebar-left ul li{
-	margin-bottom: 20px;
-	align-items: center;
-	height: 50px;
-}
-
-.sidebar .sidebar-left ul li img{
-	height: 45px;
-	filter: invert(34%) sepia(95%) saturate(6%) hue-rotate(252deg) brightness(95%) contrast(88%);
-}
-
-.sidebar .sidebar-left ul li img:hover{
-	filter: invert(86%) sepia(0%) saturate(1322%) hue-rotate(176deg) brightness(100%) contrast(83%);
-}
-
-.sidebar-side{
-	height: 80%
-}
-.sidebar-bottom{
-	border: 1px solid #353535;
-	border-bottom: none;
-	border-left: none;
-	height: 20%;
-}
-
-.sidebar .active{
-	border-left: 1px solid #0078d4;
-}
-
-.window .main-content{
-	width: 70%;
-}
-
-.window .main-content .content-head{
-	height: 5%;
-	background-color: #181818;
-}
-
-.window .main-content .content-head ul{
-	height: 100%;
-	width: 100%;
-	border-bottom: 1px solid #353535;
-	color: #4b4b4b;
-}
-
-.window .main-content .content-head ul li{
-	width: 10%;
-	height: 100%;
-	border: 1px solid #353535;
-	border-bottom: none;
-	margin: 0px;
-	align-items: center;
-}
-
-img.close:hover{
-	background-color: white;
-	filter: invert(86%) sepia(0%) saturate(1322%) hue-rotate(176deg) brightness(100%) contrast(83%);
-}
-
-.window .main-content .content-head ul li img{
-	height: 20px;
-	width: 20px;
-	border-radius: 3px;
-}
-
-.window .main-content .content-head ul li a{
-	align-items: center;
-	color: inherit;
-	text-decoration: none;
-}
-
-.window .main-content .content-head ul li:hover{
-	background-color: #1f1f1f;
-}
-
-.main-content .active{
-	border-top: 5px solid #0078d4;
-	background-color: #1f1f1f;
-}
-
-
 img.codeoutline{
 	filter: invert(63%) sepia(14%) saturate(6873%) hue-rotate(343deg) brightness(90%) contrast(91%);
 	margin: 0px 3px;
+	height: 14px;
+	width: 14px;
+	border-radius: 3px;
 }
 img.close{
 	filter: invert(34%) sepia(95%) saturate(6%) hue-rotate(252deg) brightness(95%) contrast(88%);
 }
+
+img.downarrow{
+	height: 12px;
+	margin-right: 3px;
+	filter: invert(86%) sepia(0%) saturate(1322%) hue-rotate(176deg) brightness(100%) contrast(83%);
+}
+
