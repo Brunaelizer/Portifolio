@@ -49,6 +49,7 @@
 .sidebar .sidebar-left .active{
 	border-left: 1px solid #0078d4;
 }
+
 .sidebar .sidebar-left .active img{
     filter: invert(86%) sepia(0%) saturate(1322%) hue-rotate(176deg) brightness(100%) contrast(83%);
 }
@@ -85,14 +86,13 @@
 }
 
 .sidebar .sidebar-right h2{
-
     font-size: 12px;
     font-weight: bold;
+    margin-left: 5px;
 }
 
 .sidebar-right .files{
     width: 100%;
-    margin-left: 5px;
 }
 
 .sidebar-right .files ul li{
