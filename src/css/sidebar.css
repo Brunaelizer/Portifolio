@@ -25,7 +25,11 @@
 	align-items: center;
 	height: 50px;
 }
-
+.sidebar .sidebar-right ul li a{
+	height: 100%;
+	width: 100%;
+	display: inline-block;
+}
 .sidebar .sidebar-left ul li img{
 	height: 45px;
 	filter: invert(34%) sepia(95%) saturate(6%) hue-rotate(252deg) brightness(95%) contrast(88%);
