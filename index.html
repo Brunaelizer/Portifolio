@@ -78,7 +78,7 @@
                     </h2>
                     <ul>
                       <li>
-                        <a href="pages/en/about-me.html" target="targetframe">
+                        <a>
                           <img
                             class="codeoutline"
                             src="src/img/codeoutline.svg"
@@ -86,7 +86,7 @@
                         </a>
                       </li>
                       <li>
-                        <a href="pages/en/curriculum.html" target="targetframe">
+                        <a>
                           <img
                             class="codeoutline"
                             src="src/img/codeoutline.svg"
@@ -94,9 +94,7 @@
                         </a>
                       </li>
                       <li>
-                        <a
-                          href="pages/en/this_project.html"
-                          target="targetframe">
+                        <a href="">
                           <img
                             class="codeoutline"
                             src="src/img/codeoutline.svg"
@@ -213,6 +211,13 @@
       });
 
       $("#content").load("pages/en/about-me.html");
+
+      function lineNumber() {
+        var html = "";
+        for (let i = 0; i < 50; i++) {
+          html += "<p>" + i + "</p>";
+        }
+      }
     });
   </script>
 </html>
